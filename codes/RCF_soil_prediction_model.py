@@ -65,7 +65,7 @@ feature_wo_smiles_z = scipy.stats.mstats.zscore(feature_wo_smiles,0)
 #uncomment and run below codes to shuffle the data, or directly load sample index to do test run
 #total_id = np.arange(n_sample)
 #np.random.shuffle(total_id)
-total_id = np.load('sample_index.npy')
+total_id = np.load('../Data/sample_index.npy')
 splits = 5
 train_split_index,test_split_index = Kfold(n_sample,splits)
 
@@ -138,7 +138,7 @@ for k in range(splits):
 
 
 #read in chemical group obtained from clustering results
-ccmap = np.load('chemical_group.npy')
+ccmap = np.load('../Data/chemical_group.npy')
 
 
 ccmap_shuffle_property = []
