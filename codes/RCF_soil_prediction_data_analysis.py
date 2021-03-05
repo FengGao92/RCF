@@ -15,7 +15,7 @@ from rdkit import DataStructs
 
 
 print('To generate and save figures automatically, please uncomment savefig codes. reading data')
-data = pd.read_csv('rcf_lipid_combined.csv',encoding='cp1252')
+data = pd.read_csv('../Data/rcf_lipid_combined.csv',encoding='cp1252')
 print('finish reading data')
 
 
