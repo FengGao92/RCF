@@ -26,7 +26,7 @@ from utility import Kfold
 
 
 print('reading data')
-data = pd.read_csv('rcf_lipid_combined.csv',encoding='cp1252')
+data = pd.read_csv('../Data/rcf_lipid_combined.csv',encoding='cp1252')
 print('reading data finished')
 
 
