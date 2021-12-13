@@ -109,9 +109,9 @@ for k in range(splits):
                 best_n = ne
                 best_d = m_d
 
-model = GradientBoostingRegressor(n_estimators=best_n,max_depth=best_d).fit(np.array(train_feature),np.array(train_label))
-permut_importance = permutation_importance(model,test_feature,np.array(test_label),n_repeats=10)
-importance_all_dots.append(permut_importance.importances)
+    model = GradientBoostingRegressor(n_estimators=best_n,max_depth=best_d).fit(np.array(train_feature),np.array(train_label))
+    permut_importance = permutation_importance(model,test_feature,np.array(test_label),n_repeats=10)
+    importance_all_dots.append(permut_importance.importances)
 
     plot_partial_dependence(model, np.array(train_feature)[:,0].reshape(-1,1),['$MW$'],np.array(['$MW$']))
     #uncomment code below to output and save figure
