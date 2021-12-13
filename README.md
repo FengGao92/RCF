@@ -3,19 +3,16 @@
 Todo: 1. update codes; 2. add more description; 3. add figues
 
 
-=========================================================================
-System Requirements
+##System Requirements
 
 Windows (10), Mac OS X (>= 10.8) or Linux
 Python >= 3.7
 
-=========================================================================
-Dependencies
+##Dependencies
 
 To run the codes in this folder requires installation of Python RDKit 2020.3.3, Scikit-learn 0.24.1, Seaborn 0.10.1, Pandas 1.1.1 packages and Jupyter Notebook.
 
-=========================================================================
-Installation of Python packages
+##Installation of Python packages
 
 We suggest users to create a virtual environment to install the following packages.
 RDKit can be installed with:
@@ -45,16 +42,15 @@ codna: conda install -c conda-forge notebook
 pip: pip install notebook
 More information about installation can be found at: https://jupyter.org/install
 Installation should be within 20 minutes
-===============================================================
-Quick start
+
+##Quick start
 
 1. To train and test models in the paper, in terminal, run each model's script.
 2. To produce heatmap of chemical similarity comparion, statistics description of dataset and cluster chemicals, in termial, run: python RCF_soil_prediction_data_analysis.py
 3. To visualize substructure in molecules, in terminal, run: jupyter notebook. Then load RCF_soil_prediction_visualize_mol_substructure.ipynb.
 4. Run models repeatedly (10 times) to collect results.
 5. Uncomment to output figures.
-===============================================================
-Introduction
 
-===============================================================
-Results
+##Introduction
+
+##Results
