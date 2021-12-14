@@ -1,5 +1,4 @@
-#====================================================This script contains codes for ===================================================
-#Direct prediction of bioaccumulation of organic contaminants in plant roots from soils with machine learning models based on molecular structures
+#demonstration codes for gbrt model
 
 import pandas as pd
 import numpy as np
@@ -154,7 +153,7 @@ for l in prediction_true:
     for v in l:
         prediction_true_wo_smiles.append(v)
 
-
+#generating figure for one sample run; same can be used for figures with averaging results
 sns.scatterplot(prediction_true_wo_smiles,prediction_wo_smiles,linewidth=0.5,hue=ccmap_shuffle_property,palette={1:'#6D042C',0:"#EECF63",2:"#3E7E6C",3:"#C10A36"},s=35)
 sns.lineplot(np.arange(-3.,2.0),np.arange(-3,2.0),color='r')
 plt.xlabel('Measured $logRCF_{soil}$')
